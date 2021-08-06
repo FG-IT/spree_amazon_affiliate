@@ -1,0 +1,7 @@
+<% unless Spree::Config['amazon_affiliate_code'].nil? %>
+  <div class="amzn-ad-primary-btn mb-3">
+    <a rel="nofollow" href="https://www.amazon.com/dp/<%= @product.master.sku %>?tag=<%= Spree::Config['amazon_affiliate_code'] %>" target="_top">
+      <img src="/assets/amazon-button.png" alt="buy on amazon"/>
+    </a>
+  </div>
+<% end %>
